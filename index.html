@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Book Directory</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center" style="font-size: 170px;">
+         My <span 
+    class= "text-primary">Book</span> List </h1> 
+    <br>
+    <br>
+    <br>
+    <form id="book-form">
+        <div class="form-group">
+            <label for="title" style="font-size: 80px;">Title</label>
+            <input type="text" style="font-size: 70px;" id="title" 
+            class="form-control">
+        </div>
+<br>
+<br>
+        <div class="form-group">
+            <label for="author" style="font-size: 80px;">Author</label>
+            <input type="text" style="font-size: 70px;" id="author" 
+            class="form-control">
+        </div>
+
+        <br>
+        <br>
+
+        <div class="form-group">
+            <label for="no" style="font-size: 80px;">ISBN#</label>
+            <input type="text" style="font-size: 70px;" id="isbn" class="form-control" 
+            >
+        </div>
+<br>
+<br>
+
+        <input type="submit" style="font-size: 50px;" value="Add Book"
+        class="btn btn-primary btn-block">
+    </form> 
+
+    <br>
+    <br>
+        <table class="table table-striped mt-5" style="font-size: 50px;">
+            <thead>
+                <tr>
+                    <th>Title  </th>
+                    <th> Author</th>
+                    <th> ISBN</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
